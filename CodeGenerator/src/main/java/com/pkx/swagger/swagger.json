@@ -1,0 +1,4338 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "微服务工程代码生成器,生成Dao、Service、Controller、Pojo、Feign、Swagger的JSON脚本",
+    "version": "1.0.0",
+    "title": "微服务工程代码生成器",
+    "termsOfService": "https://blog.csdn.net/pkxwyf",
+    "contact": {
+      "email": "961968629@qq.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "petstore.swagger.io",
+  "basePath": "/v2",
+  "tags": [
+        {
+      "name": "TDictionaryController",
+      "description": "TDictionaryController"
+    },
+    {
+      "name": "TDictionaryController",
+      "description": "TDictionaryController"
+    },
+    {
+      "name": "TDictionaryController",
+      "description": "TDictionaryController"
+    },
+    {
+      "name": "TDictionaryController",
+      "description": "TDictionaryController"
+    },
+    {
+      "name": "TEssayController",
+      "description": "TEssayController"
+    },
+    {
+      "name": "TEssayController",
+      "description": "TEssayController"
+    },
+    {
+      "name": "TEssayController",
+      "description": "TEssayController"
+    },
+    {
+      "name": "TEssayController",
+      "description": "TEssayController"
+    },
+    {
+      "name": "TEssayFileController",
+      "description": "TEssayFileController"
+    },
+    {
+      "name": "TEssayFileController",
+      "description": "TEssayFileController"
+    },
+    {
+      "name": "TEssayFileController",
+      "description": "TEssayFileController"
+    },
+    {
+      "name": "TEssayFileController",
+      "description": "TEssayFileController"
+    },
+    {
+      "name": "TEssayTypeController",
+      "description": "TEssayTypeController"
+    },
+    {
+      "name": "TEssayTypeController",
+      "description": "TEssayTypeController"
+    },
+    {
+      "name": "TEssayTypeController",
+      "description": "TEssayTypeController"
+    },
+    {
+      "name": "TEssayTypeController",
+      "description": "TEssayTypeController"
+    },
+    {
+      "name": "TForwardController",
+      "description": "TForwardController"
+    },
+    {
+      "name": "TForwardController",
+      "description": "TForwardController"
+    },
+    {
+      "name": "TForwardController",
+      "description": "TForwardController"
+    },
+    {
+      "name": "TForwardController",
+      "description": "TForwardController"
+    },
+    {
+      "name": "TLinkController",
+      "description": "TLinkController"
+    },
+    {
+      "name": "TLinkController",
+      "description": "TLinkController"
+    },
+    {
+      "name": "TLinkController",
+      "description": "TLinkController"
+    },
+    {
+      "name": "TLinkController",
+      "description": "TLinkController"
+    },
+    {
+      "name": "TPraiseController",
+      "description": "TPraiseController"
+    },
+    {
+      "name": "TPraiseController",
+      "description": "TPraiseController"
+    },
+    {
+      "name": "TPraiseController",
+      "description": "TPraiseController"
+    },
+    {
+      "name": "TPraiseController",
+      "description": "TPraiseController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/tDictionary": {
+      "get": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "查询所有TDictionary",
+        "description": "查询所有TDictionary方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TDictionary»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "添加TDictionary",
+        "description": "添加TDictionary方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TDictionary方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TDictionary"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/tDictionary/{id}": {
+      "delete": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "根据ID删除TDictionary",
+        "description": "根据ID删除TDictionary方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TDictionary方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "根据ID修改TDictionary",
+        "description": "根据ID修改TDictionary方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TDictionary方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TDictionary",
+            "description": "传入TDictionary的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TDictionary"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "根据ID查询TDictionary",
+        "description": "根据ID查询TDictionary方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TDictionary方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«TDictionary»"
+            }
+          }
+        }
+      }
+    },
+    "/tDictionary/search": {
+      "post": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "不带分页条件搜索TDictionary",
+        "description": "不带分页条件搜索TDictionary方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TDictionary",
+            "description": "传入TDictionary的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TDictionary"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TDictionary»»"
+            }
+          }
+        }
+      }
+    },
+    "/tDictionary/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "分页列表查询TDictionary",
+        "description": "分页列表查询TDictionary方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TDictionary»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TDictionaryController"
+        ],
+        "summary": "分页条件搜索TDictionary",
+        "description": "分页条件搜索TDictionary方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TDictionary",
+            "description": "传入TDictionary的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TDictionary"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TDictionary"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TDictionary»»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssay": {
+      "get": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "查询所有TEssay",
+        "description": "查询所有TEssay方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssay»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "添加TEssay",
+        "description": "添加TEssay方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TEssay方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssay"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/tEssay/{id}": {
+      "delete": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "根据ID删除TEssay",
+        "description": "根据ID删除TEssay方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TEssay方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "根据ID修改TEssay",
+        "description": "根据ID修改TEssay方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TEssay方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TEssay",
+            "description": "传入TEssay的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssay"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "根据ID查询TEssay",
+        "description": "根据ID查询TEssay方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TEssay方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«TEssay»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssay/search": {
+      "post": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "不带分页条件搜索TEssay",
+        "description": "不带分页条件搜索TEssay方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TEssay",
+            "description": "传入TEssay的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssay"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssay»»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssay/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "分页列表查询TEssay",
+        "description": "分页列表查询TEssay方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssay»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEssayController"
+        ],
+        "summary": "分页条件搜索TEssay",
+        "description": "分页条件搜索TEssay方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TEssay",
+            "description": "传入TEssay的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssay"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TEssay"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssay»»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayFile": {
+      "get": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "查询所有TEssayFile",
+        "description": "查询所有TEssayFile方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayFile»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "添加TEssayFile",
+        "description": "添加TEssayFile方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TEssayFile方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayFile"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayFile/{id}": {
+      "delete": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "根据ID删除TEssayFile",
+        "description": "根据ID删除TEssayFile方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TEssayFile方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "根据ID修改TEssayFile",
+        "description": "根据ID修改TEssayFile方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TEssayFile方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TEssayFile",
+            "description": "传入TEssayFile的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayFile"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "根据ID查询TEssayFile",
+        "description": "根据ID查询TEssayFile方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TEssayFile方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«TEssayFile»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayFile/search": {
+      "post": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "不带分页条件搜索TEssayFile",
+        "description": "不带分页条件搜索TEssayFile方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TEssayFile",
+            "description": "传入TEssayFile的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayFile"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayFile»»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayFile/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "分页列表查询TEssayFile",
+        "description": "分页列表查询TEssayFile方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayFile»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEssayFileController"
+        ],
+        "summary": "分页条件搜索TEssayFile",
+        "description": "分页条件搜索TEssayFile方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TEssayFile",
+            "description": "传入TEssayFile的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayFile"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TEssayFile"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayFile»»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayType": {
+      "get": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "查询所有TEssayType",
+        "description": "查询所有TEssayType方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayType»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "添加TEssayType",
+        "description": "添加TEssayType方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TEssayType方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayType"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayType/{id}": {
+      "delete": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "根据ID删除TEssayType",
+        "description": "根据ID删除TEssayType方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TEssayType方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "根据ID修改TEssayType",
+        "description": "根据ID修改TEssayType方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TEssayType方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TEssayType",
+            "description": "传入TEssayType的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayType"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "根据ID查询TEssayType",
+        "description": "根据ID查询TEssayType方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TEssayType方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«TEssayType»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayType/search": {
+      "post": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "不带分页条件搜索TEssayType",
+        "description": "不带分页条件搜索TEssayType方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TEssayType",
+            "description": "传入TEssayType的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayType"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayType»»"
+            }
+          }
+        }
+      }
+    },
+    "/tEssayType/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "分页列表查询TEssayType",
+        "description": "分页列表查询TEssayType方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayType»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TEssayTypeController"
+        ],
+        "summary": "分页条件搜索TEssayType",
+        "description": "分页条件搜索TEssayType方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TEssayType",
+            "description": "传入TEssayType的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TEssayType"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TEssayType"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TEssayType»»"
+            }
+          }
+        }
+      }
+    },
+    "/tForward": {
+      "get": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "查询所有TForward",
+        "description": "查询所有TForward方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TForward»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "添加TForward",
+        "description": "添加TForward方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TForward方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TForward"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/tForward/{id}": {
+      "delete": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "根据ID删除TForward",
+        "description": "根据ID删除TForward方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TForward方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "根据ID修改TForward",
+        "description": "根据ID修改TForward方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TForward方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TForward",
+            "description": "传入TForward的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TForward"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "根据ID查询TForward",
+        "description": "根据ID查询TForward方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TForward方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«TForward»"
+            }
+          }
+        }
+      }
+    },
+    "/tForward/search": {
+      "post": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "不带分页条件搜索TForward",
+        "description": "不带分页条件搜索TForward方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TForward",
+            "description": "传入TForward的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TForward"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TForward»»"
+            }
+          }
+        }
+      }
+    },
+    "/tForward/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "分页列表查询TForward",
+        "description": "分页列表查询TForward方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TForward»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TForwardController"
+        ],
+        "summary": "分页条件搜索TForward",
+        "description": "分页条件搜索TForward方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TForward",
+            "description": "传入TForward的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TForward"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TForward"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TForward»»"
+            }
+          }
+        }
+      }
+    },
+    "/tLink": {
+      "get": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "查询所有TLink",
+        "description": "查询所有TLink方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TLink»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "添加TLink",
+        "description": "添加TLink方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TLink方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TLink"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/tLink/{id}": {
+      "delete": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "根据ID删除TLink",
+        "description": "根据ID删除TLink方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TLink方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "根据ID修改TLink",
+        "description": "根据ID修改TLink方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TLink方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TLink",
+            "description": "传入TLink的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TLink"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "根据ID查询TLink",
+        "description": "根据ID查询TLink方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TLink方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«TLink»"
+            }
+          }
+        }
+      }
+    },
+    "/tLink/search": {
+      "post": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "不带分页条件搜索TLink",
+        "description": "不带分页条件搜索TLink方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TLink",
+            "description": "传入TLink的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TLink"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TLink»»"
+            }
+          }
+        }
+      }
+    },
+    "/tLink/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "分页列表查询TLink",
+        "description": "分页列表查询TLink方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TLink»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TLinkController"
+        ],
+        "summary": "分页条件搜索TLink",
+        "description": "分页条件搜索TLink方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TLink",
+            "description": "传入TLink的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TLink"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TLink"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TLink»»"
+            }
+          }
+        }
+      }
+    },
+    "/tPraise": {
+      "get": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "查询所有TPraise",
+        "description": "查询所有TPraise方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TPraise»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "添加TPraise",
+        "description": "添加TPraise方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TPraise方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TPraise"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/tPraise/{id}": {
+      "delete": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "根据ID删除TPraise",
+        "description": "根据ID删除TPraise方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TPraise方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "根据ID修改TPraise",
+        "description": "根据ID修改TPraise方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TPraise方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TPraise",
+            "description": "传入TPraise的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TPraise"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "根据ID查询TPraise",
+        "description": "根据ID查询TPraise方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TPraise方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«TPraise»"
+            }
+          }
+        }
+      }
+    },
+    "/tPraise/search": {
+      "post": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "不带分页条件搜索TPraise",
+        "description": "不带分页条件搜索TPraise方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TPraise",
+            "description": "传入TPraise的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TPraise"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TPraise»»"
+            }
+          }
+        }
+      }
+    },
+    "/tPraise/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "分页列表查询TPraise",
+        "description": "分页列表查询TPraise方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TPraise»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TPraiseController"
+        ],
+        "summary": "分页条件搜索TPraise",
+        "description": "分页条件搜索TPraise方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TPraise",
+            "description": "传入TPraise的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TPraise"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TPraise"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«TPraise»»"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog": {
+      "get": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "查询所有UndoLog",
+        "description": "查询所有UndoLog方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«UndoLog»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "添加UndoLog",
+        "description": "添加UndoLog方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加UndoLog方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog/{id}": {
+      "delete": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "根据ID删除UndoLog",
+        "description": "根据ID删除UndoLog方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除UndoLog方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "根据ID修改UndoLog",
+        "description": "根据ID修改UndoLog方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改UndoLog方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "UndoLog",
+            "description": "传入UndoLog的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "根据ID查询UndoLog",
+        "description": "根据ID查询UndoLog方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改UndoLog方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«UndoLog»"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog/search": {
+      "post": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "不带分页条件搜索UndoLog",
+        "description": "不带分页条件搜索UndoLog方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "UndoLog",
+            "description": "传入UndoLog的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«UndoLog»»"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "分页列表查询UndoLog",
+        "description": "分页列表查询UndoLog方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«UndoLog»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "分页条件搜索UndoLog",
+        "description": "分页条件搜索UndoLog方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "UndoLog",
+            "description": "传入UndoLog的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«UndoLog»»"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Result": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "object",
+          "description": "逻辑数据"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«List«TDictionary»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TDictionary"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«TDictionary»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TDictionary"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "TDictionary": {
+      "type": "object",
+      "properties": {
+        "dictionaryId": {
+          "type": "long",
+          "description": "字典ID"
+        },
+        "keyCode": {
+          "type": "string",
+          "description": "KEY编码"
+        },
+        "parentKeyCode": {
+          "type": "string",
+          "description": "上级字典KEY编码，NULL表示无上级"
+        },
+        "hasChildren": {
+          "type": "string",
+          "description": "是否有子字段"
+        },
+        "keyType": {
+          "type": "string",
+          "description": "KEY类型：KV-键值对 LIST-列表 KEY-键条目，不使用key_value值"
+        },
+        "keyName": {
+          "type": "string",
+          "description": "KEY名称"
+        },
+        "keyValue": {
+          "type": "string",
+          "description": "KEY值"
+        },
+        "sort": {
+          "type": "integer",
+          "format": "int32",
+          "description": "排序值，值越小越靠前"
+        },
+        "remark": {
+          "type": "string",
+          "description": "说明"
+        },
+        "gmtCreate": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "gmtModified": {
+          "type": "date",
+          "description": "修改时间"
+        },
+        "isDeleted": {
+          "type": "string",
+          "description": "是否删除"
+        }
+      },
+      "description": "TDictionary"
+    },
+    "Result«List«TEssay»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TEssay"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«TEssay»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TEssay"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "TEssay": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键ID"
+        },
+        "no": {
+          "type": "long",
+          "description": "文章编号"
+        },
+        "userOpenid": {
+          "type": "string",
+          "description": "文章发布人的openid"
+        },
+        "title": {
+          "type": "string",
+          "description": "文章标题"
+        },
+        "summary": {
+          "type": "string",
+          "description": "文章摘要"
+        },
+        "contentLength": {
+          "type": "integer",
+          "format": "int32",
+          "description": "文章内容总字数"
+        },
+        "cover": {
+          "type": "string",
+          "description": "文章封面"
+        },
+        "categoryId": {
+          "type": "long",
+          "description": "文章末级分类ID"
+        },
+        "unCategoryName": {
+          "type": "string",
+          "description": "拼接文章分类名称"
+        },
+        "shelvesStatus": {
+          "type": "string",
+          "description": "文章上架状态，ON_SHELF-上架；OFF_SHELF-主动下架；FORCE_OFF_SHELF-强制下架"
+        },
+        "auditStatus": {
+          "type": "string",
+          "description": "文章审核状态：DRAFT-草稿；AUDIT-提交审核；AUDIT_OK-审核通过；AUDIT_NG-审核不通过"
+        },
+        "auditUserOpenid": {
+          "type": "string",
+          "description": "审核人openid"
+        },
+        "auditTime": {
+          "type": "date",
+          "description": "审核时间"
+        },
+        "type": {
+          "type": "integer",
+          "format": "int32",
+          "description": "文章类型，0：蚂蚁号文章，1：H5文章"
+        },
+        "level": {
+          "type": "integer",
+          "format": "int32",
+          "description": "等级，0：普通，1：优秀"
+        },
+        "sort": {
+          "type": "integer",
+          "format": "int32",
+          "description": "排序值，值越小越靠前"
+        },
+        "remarks": {
+          "type": "string",
+          "description": "备注"
+        },
+        "gmtCreate": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "gmtModified": {
+          "type": "date",
+          "description": "修改时间"
+        },
+        "isDeleted": {
+          "type": "string",
+          "description": "是否删除， 0=否 1=是"
+        }
+      },
+      "description": "TEssay"
+    },
+    "Result«List«TEssayFile»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TEssayFile"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«TEssayFile»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TEssayFile"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "TEssayFile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键ID"
+        },
+        "essayNo": {
+          "type": "long",
+          "description": "关联文章编号"
+        },
+        "fileAddr": {
+          "type": "string",
+          "description": "文件URL"
+        },
+        "fileType": {
+          "type": "string",
+          "description": "文件类型，PICTURE-图片，VIDEO-视频"
+        },
+        "gmtCreate": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "gmtModified": {
+          "type": "date",
+          "description": "修改时间"
+        },
+        "isDeleted": {
+          "type": "string",
+          "description": "是否删除， 0=否 1=是"
+        }
+      },
+      "description": "TEssayFile"
+    },
+    "Result«List«TEssayType»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TEssayType"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«TEssayType»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TEssayType"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "TEssayType": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键ID"
+        },
+        "code": {
+          "type": "string",
+          "description": "类型编码"
+        },
+        "name": {
+          "type": "string",
+          "description": "类型名称"
+        },
+        "parentId": {
+          "type": "long",
+          "description": "父ID"
+        },
+        "remarks": {
+          "type": "string",
+          "description": "备注"
+        },
+        "gmtCreate": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "gmtModified": {
+          "type": "date",
+          "description": "修改时间"
+        },
+        "isDeleted": {
+          "type": "string",
+          "description": "是否删除， 0=否 1=是"
+        }
+      },
+      "description": "TEssayType"
+    },
+    "Result«List«TForward»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TForward"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«TForward»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TForward"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "TForward": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键ID"
+        },
+        "userOpenid": {
+          "type": "string",
+          "description": "用户openid"
+        },
+        "essayNo": {
+          "type": "long",
+          "description": "关联文章编号"
+        },
+        "gmtCreate": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "gmtModified": {
+          "type": "date",
+          "description": "修改时间"
+        },
+        "isDeleted": {
+          "type": "string",
+          "description": "是否删除， 0=否 1=是"
+        }
+      },
+      "description": "TForward"
+    },
+    "Result«List«TLink»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TLink"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«TLink»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TLink"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "TLink": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键ID"
+        },
+        "essayNo": {
+          "type": "long",
+          "description": "关联文章编号"
+        },
+        "link": {
+          "type": "string",
+          "description": "链接(根据不同链接类型填入不同形态的值)"
+        },
+        "title": {
+          "type": "string",
+          "description": "标题"
+        },
+        "logo": {
+          "type": "string",
+          "description": "图标"
+        },
+        "linkType": {
+          "type": "string",
+          "description": "链接类型，OUTSIDE：外部文章，INSIDE：内部文章，TEAM：群，SHOP：云店，GOODS：商品"
+        },
+        "remarks": {
+          "type": "string",
+          "description": "备注"
+        },
+        "gmtCreate": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "gmtModified": {
+          "type": "date",
+          "description": "修改时间"
+        },
+        "isDeleted": {
+          "type": "string",
+          "description": "是否删除， 0=否 1=是"
+        }
+      },
+      "description": "TLink"
+    },
+    "Result«List«TPraise»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TPraise"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«TPraise»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TPraise"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "TPraise": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键ID"
+        },
+        "userOpenid": {
+          "type": "string",
+          "description": "用户openid"
+        },
+        "essayNo": {
+          "type": "long",
+          "description": "关联文章编号"
+        },
+        "gmtCreate": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "gmtModified": {
+          "type": "date",
+          "description": "修改时间"
+        },
+        "isDeleted": {
+          "type": "string",
+          "description": "是否删除， 0=否 1=是"
+        }
+      },
+      "description": "TPraise"
+    },
+    "Result«List«UndoLog»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/UndoLog"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«UndoLog»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/UndoLog"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "UndoLog": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": ""
+        },
+        "branchId": {
+          "type": "long",
+          "description": ""
+        },
+        "xid": {
+          "type": "string",
+          "description": ""
+        },
+        "context": {
+          "type": "string",
+          "description": ""
+        },
+        "rollbackInfo": {
+          "type": "string",
+          "description": ""
+        },
+        "logStatus": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "logCreated": {
+          "type": "date",
+          "description": ""
+        },
+        "logModified": {
+          "type": "date",
+          "description": ""
+        },
+        "ext": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "UndoLog"
+    }
+  },
+  "externalDocs": {
+
+  }
+}

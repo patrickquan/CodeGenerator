@@ -26,11 +26,11 @@ public class StringUtils {
     }
 
     /***
-     * 移除tab_,tb_
+     * 移除t_
      * @return
      */
     public static String replaceTab(String str){
-        return str.replaceFirst("tab_","").replaceFirst("tb_","");
+        return str.replaceFirst("t_","");
     }
 
     /***
